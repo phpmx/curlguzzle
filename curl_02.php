@@ -13,7 +13,7 @@ $response = curl_exec($ch);
 
 curl_close($ch);
 ob_start();
-//$jsonresponse = json_decode($response, true);
+// $jsonresponse = json_decode($response, true); // Parsear el resultado como JSON
 ob_start();
 rewind($verbose);
 $verboseLog = stream_get_contents($verbose);
